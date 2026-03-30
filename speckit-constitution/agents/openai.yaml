@@ -1,0 +1,4 @@
+interface:
+  display_name: "Speckit Constitution"
+  short_description: "Create or update project constitutions"
+  default_prompt: "Use $speckit-constitution to create or update the project constitution and keep templates in sync."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Speckit Tasks"
+  short_description: "Generate dependency-ordered task lists"
+  default_prompt: "Use $speckit-tasks to generate an actionable tasks.md for the current feature."

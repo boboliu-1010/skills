@@ -1,0 +1,4 @@
+interface:
+  display_name: "Speckit Implement"
+  short_description: "Execute tasks from the current plan"
+  default_prompt: "Use $speckit-implement to execute the current feature tasks and implementation plan."

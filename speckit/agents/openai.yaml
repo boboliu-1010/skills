@@ -1,4 +1,0 @@
-interface:
-  display_name: "Speckit"
-  short_description: "Single-entry Specify workflow"
-  default_prompt: "Use $speckit to turn this request into a Specify or Spec Kit workflow that Codex, Claude Code, Gemini CLI, Copilot, and other coding agents can follow."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Speckit Clarify"
+  short_description: "Clarify underspecified feature details"
+  default_prompt: "Use $speckit-clarify to ask targeted questions and refine the current feature spec."
