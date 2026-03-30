@@ -37,6 +37,30 @@ Use this order by default:
 
 If the repo already has these files, extend them instead of recreating them.
 
+## Mainstream Agent Support
+
+Write artifacts so they work across mainstream coding agents:
+
+- Codex
+- Claude Code
+- Gemini CLI
+- GitHub Copilot
+- Cursor agents
+- Windsurf
+- Qwen Code
+- OpenCode
+- generic AI coding assistants
+
+Practical rules:
+
+- keep requirements in plain English
+- keep agent-specific setup minimal and derived from the same spec source
+- prefer shared directories such as `.specify/` and `specs/`
+- avoid embedding critical behavior only in one assistant's command or memory file
+- keep branching, tasking, and validation conventions readable without a specific vendor tool
+
+If you need agent-specific onboarding, treat it as a thin adapter layer on top of the shared spec artifacts.
+
 ## Good Spec Characteristics
 
 A good spec:

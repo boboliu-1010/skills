@@ -1,6 +1,6 @@
 ---
 name: spec-skill
-description: Spec-driven software delivery workflow for turning product or engineering requests into repository artifacts such as constitution updates, feature specs, implementation plans, task lists, and validation steps. Use when a user asks to develop "by spec", "按 spec 方法", "先写规格再做", to introduce Specify/Spec Kit into a repo, to baseline an existing project's public contract before refactoring, or to continue implementation from an existing `specs/` directory.
+description: Spec-driven software delivery workflow for turning product or engineering requests into repository artifacts such as constitutions, feature specs, implementation plans, task lists, and validation steps. Use when a user asks to develop "by spec", "with Specify", "with Spec Kit", "spec-first", "requirements first", or to introduce Specify / Spec Kit into a repository used by mainstream coding agents such as Codex, Claude Code, Gemini CLI, GitHub Copilot, Cursor agents, Windsurf, Qwen Code, OpenCode, or generic AI coding assistants. Also use when baselining an existing project's public contract before refactoring, or when continuing implementation from an existing `specs/` directory.
 ---
 
 # Spec Skill
@@ -15,6 +15,8 @@ Use this skill to move a repository through a disciplined sequence:
 
 Do not treat spec writing as paperwork. The goal is to reduce ambiguity before code changes, especially for public APIs, payment flows, security-sensitive behavior, migrations, and refactors.
 
+This skill is agent-agnostic. It should produce repository artifacts and workflows that remain usable whether the implementation agent is Codex, Claude Code, Gemini CLI, GitHub Copilot, Cursor, Windsurf, Qwen Code, OpenCode, or another coding assistant.
+
 ## Workflow Decision
 
 Choose the smallest spec process that matches the request:
@@ -28,6 +30,8 @@ Choose the smallest spec process that matches the request:
 - New repo or repo newly adopting spec-driven work:
   Initialize the spec structure first, then write the baseline constitution and first spec.
 
+When Specify initialization is part of the task, prefer setting up the repository so multiple agent ecosystems can work from the same artifacts. The shared source of truth should be `.specify/` and `specs/`, not agent-specific prompt files.
+
 ## Repository Intake
 
 Before writing artifacts:
@@ -38,6 +42,8 @@ Before writing artifacts:
 - avoid introducing spec files that contradict the current codebase
 
 If the repo already uses Specify or Spec Kit, extend the existing conventions instead of inventing new ones.
+
+If the repo serves multiple coding agents, keep agent-specific files thin and derived. Put durable project rules in the constitution and feature intent in `spec.md`, not inside one agent's custom command file.
 
 ## Artifact Rules
 
@@ -100,6 +106,8 @@ After artifacts are ready:
 
 For contract-sensitive repos, prefer `spec -> tests -> refactor -> feature` over direct rewrites.
 
+When supporting multiple coding agents, write specs in plain, tool-neutral English. Avoid assistant-specific jargon unless a repository already depends on it.
+
 ## Output Expectations
 
 When using this skill, produce or update some combination of:
@@ -118,5 +126,6 @@ Read [`references/workflow.md`](./references/workflow.md) when you need:
 - a decision rule for how much process to apply
 - a baseline-spec pattern for existing repos
 - a handoff pattern from spec artifacts to implementation
+- guidance for multi-agent Specify adoption
 
 Keep the skill lean. Do not add ceremonial docs that duplicate repository artifacts.
