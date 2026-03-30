@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec Skill"
+  short_description: "Spec-driven repo workflow skill"
+  default_prompt: "Use $spec-skill to turn this request into a spec, plan, tasks, implementation, and verification flow."
