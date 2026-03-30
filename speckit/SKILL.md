@@ -1,9 +1,9 @@
 ---
-name: spec-skill
-description: Spec-driven software delivery workflow for turning product or engineering requests into repository artifacts such as constitutions, feature specs, implementation plans, task lists, and validation steps. Use when a user asks to develop "by spec", "with Specify", "with Spec Kit", "spec-first", "requirements first", or to introduce Specify / Spec Kit into a repository used by mainstream coding agents such as Codex, Claude Code, Gemini CLI, GitHub Copilot, Cursor agents, Windsurf, Qwen Code, OpenCode, or generic AI coding assistants. Also use when baselining an existing project's public contract before refactoring, or when continuing implementation from an existing `specs/` directory.
+name: speckit
+description: Single-entry Specify and Spec Kit workflow for turning product or engineering requests into constitutions, feature specs, implementation plans, task lists, implementation steps, and validation results. Use when a user asks to work "by spec", "with Specify", "with Spec Kit", "spec-first", "requirements first", or to introduce a shared spec-driven workflow for mainstream coding agents such as Codex, Claude Code, Gemini CLI, GitHub Copilot, Cursor, Windsurf, Qwen Code, OpenCode, or generic AI coding assistants. Also use when baselining an existing project's public contract before refactoring, or when continuing work from an existing `specs/` directory.
 ---
 
-# Spec Skill
+# Speckit
 
 Use this skill to move a repository through a disciplined sequence:
 

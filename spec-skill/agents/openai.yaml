@@ -1,4 +1,0 @@
-interface:
-  display_name: "Spec Skill"
-  short_description: "Specify workflow for coding agents"
-  default_prompt: "Use $spec-skill to turn this request into a Specify or Spec Kit workflow that Codex, Claude Code, Gemini CLI, Copilot, and other coding agents can follow."

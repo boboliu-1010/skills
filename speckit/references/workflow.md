@@ -1,4 +1,4 @@
-# Spec Workflow Reference
+# Speckit Workflow Reference
 
 ## Decision Rule
 
